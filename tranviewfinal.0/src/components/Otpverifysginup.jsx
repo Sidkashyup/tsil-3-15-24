@@ -94,7 +94,7 @@ const Otpverify = () => {
         setotpheadline();
       })
       .catch((error) => {
-        
+        toast.success("Reached maximum limit. try after 10 minutes.");
         console.log(error);
         setLoading(false);
       });

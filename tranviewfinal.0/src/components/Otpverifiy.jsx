@@ -103,9 +103,9 @@ useEffect(() => {
         setotpheadline();
       })
       .catch((error) => {
-        
         console.log(error);
         setLoading(false);
+        toast.success("Reached maximum limit. try after 10 minutes.");
       });
   }
   
